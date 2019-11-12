@@ -1,0 +1,106 @@
+@font-face {
+  font-family: koodk;
+  src: url('./fonts/BKoodkBd_4.ttf');
+}
+@font-face {
+  font-family: mehr;
+  src: url('./fonts/BMehrBd.ttf');
+}
+@font-face {
+  font-family: nazanin;
+  src: url('./fonts/BNaznnBd.ttf');
+}
+.my-font-calender p,
+.my-font-calender div,
+.my-font-calender h1,
+.my-font-calender h2,
+.my-font-calender h3,
+.my-font-calender h4,
+.my-font-calender h5,
+.my-font-calender h6,
+.my-font-calender span,
+.my-font-calender input{
+    font-family:nazanin;
+}
+
+
+.ratio-parent {
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+  }
+  .ratio-child {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .base {
+    border-radius: 50%;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer;
+  
+    transition: all 1s;
+  }
+  .after-today {
+    background: yellow;
+  
+    transition: all 1s;
+  }
+  .before-today {
+    background: gainsboro;
+  
+    transition: all 1s;
+  }
+  .today {
+    background: aqua;
+  
+    transition: all 1s;
+  }
+  .selected {
+    background: #e84545;
+    color: #00adb5;
+  
+    border-radius: 50%;
+    transition: all 1s;
+  }
+  .list-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .list-enter-active,
+  .list-leave-active {
+    transition: all 1s;
+  }
+  .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  .slide-fade-enter-active {
+    transition: all 0.3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+  .slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  button:focus {
+    outline: 0 !important;
+  }
